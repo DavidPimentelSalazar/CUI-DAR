@@ -34,7 +34,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         String password = editTexts.get(1).getText().toString().trim();
 
         if (username.isEmpty() || password.isEmpty()) {
+            Intent it = new Intent(this, Main.class);///// esto luego se quita
+            startActivity(it); ///////////////////////////////////////// esto luego se quita
             Toast.makeText(getApplicationContext(), "Please provide a username and password.", Toast.LENGTH_SHORT).show();
+            finish(); ////////////////////////////////////////////////// esto luego se quita
         } else if (username.equals("admin") && password.equals("admin")) {
             Intent it = new Intent(this, Main.class);
             startActivity(it);
