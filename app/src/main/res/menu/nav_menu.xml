@@ -8,32 +8,36 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/nav_home"
-            android:title="Home"/>
+            android:id="@+id/patients"
+            android:icon="@drawable/vacio"
+            android:title="Gestión de pacientes"/>
 
+        <item
+            android:id="@+id/diagnosis"
+            android:icon="@drawable/vacio"
+            android:title="Gestión de diagnósticos"/>
+
+        <item
+            android:id="@+id/reassessments"
+            android:icon="@drawable/vacio"
+            android:title="Reevaluaciones e interrupciones"/>
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/nav_settings"
-            android:title="Settings"/>
+            android:icon="@drawable/vacio"
+            android:title="Ajustes"/>
 
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/nav_share"
-            android:title="Share"/>
-
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/nav_about"
-            android:title="About Us"/>
+            android:id="@+id/nav_us"
+            android:icon="@drawable/vacio"
+            android:title="Sobre nosotros"/>
     </group>
-    <item
-        android:title="">
+
+    <item android:title="">
 
         <menu>
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@drawable/nav_logout"
+                android:icon="@drawable/vacio"
                 android:title="Logout"/>
         </menu>
 

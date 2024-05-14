@@ -36,8 +36,8 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GestionDePacientesFragment()).commit();
+            navigationView.setCheckedItem(R.id.patients);
         }
     }
 
@@ -45,13 +45,15 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.nav_home) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        if (itemId == R.id.patients) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GestionDePacientesFragment()).commit();
+        } else if (itemId == R.id.diagnosis) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GestionDeDiagnosticos()).commit();
+        } else if (itemId == R.id.reassessments) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReassessmentsFragment()).commit();
         } else if (itemId == R.id.nav_settings) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-        } else if (itemId == R.id.nav_share) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ShareFragment()).commit();
-        } else if (itemId == R.id.nav_about) {
+        } else if (itemId == R.id.nav_us) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
         } else if (itemId == R.id.nav_logout) {
             Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
