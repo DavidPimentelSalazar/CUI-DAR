@@ -1,13 +1,13 @@
-package com.example.cuidar;
+package com.example.cuidar.users;
 
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class PacienteDiagnostico {
     private int id;
-    private String nombre;
+    private String nombre, fecha;
     private boolean diagnostico;
-    private Date fecha;
 
     public PacienteDiagnostico() {
 
@@ -42,11 +42,20 @@ public class PacienteDiagnostico {
     }
 
     /////// FECHA ///////
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
+    }
+
+    //______ MODULOS ______//
+    /////// GET FECHA ///////
+    public String createDate() {
+        // el formateo de la fecha
+        SimpleDateFormat fechaFormato = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        setFecha(fechaFormato.format(new Date()));
+        return getFecha();
     }
 }
