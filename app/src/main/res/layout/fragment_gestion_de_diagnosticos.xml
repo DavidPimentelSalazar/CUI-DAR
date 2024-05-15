@@ -52,7 +52,6 @@
         android:layout_marginBottom="48dp"
         android:background="@drawable/background_white"
         android:gravity="center_vertical"
-        android:text="Fecha inicio"
         android:textColor="@color/black"
         android:hint="00/00/00"
         android:textColorHint="#5A5A5A"
@@ -88,7 +87,6 @@
         android:textColor="@color/black"
         android:hint="00:00"
         android:textColorHint="#5A5A5A"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +95,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/iniciarDiagnostico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
