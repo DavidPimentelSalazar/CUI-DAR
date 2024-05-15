@@ -12,6 +12,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.cuidar.Fragments.AboutFragment;
+import com.example.cuidar.Fragments.GestionDeDiagnosticos;
+import com.example.cuidar.Fragments.GestionDePacientesFragment;
+import com.example.cuidar.Fragments.ReassessmentsFragment;
+import com.example.cuidar.Fragments.SettingsFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class Main extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

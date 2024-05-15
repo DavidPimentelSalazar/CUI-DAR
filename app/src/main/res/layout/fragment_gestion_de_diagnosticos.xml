@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestionDeDiagnosticos">
+    android:background="@color/background_blue"
+
+    tools:context=".Fragments.GestionDeDiagnosticos">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Gestion de diagnosticos" />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/Diagnostico"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="91dp"
+        android:gravity="center"
+        android:text="Diagnóstico"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Diagnostico"
+        android:layout_alignParentStart="true"
+        android:gravity="left"
+        android:text="Fecha inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dia_text"
+        app:layout_constraintStart_toStartOf="@+id/dia_text"
+        app:layout_constraintTop_toBottomOf="@+id/Diagnostico" />
+
+    <EditText
+        android:id="@+id/dia_text"
+        android:layout_width="332dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/Diagnostico"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/background_white"
+        android:gravity="center_vertical"
+        android:text="Fecha inicio"
+        android:textColor="@color/black"
+        android:hint="00/00/00"
+        android:textColorHint="#5A5A5A"
+        app:layout_constraintBottom_toTopOf="@+id/hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha"></EditText>
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="Hora inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hora_text"
+        app:layout_constraintStart_toStartOf="@+id/hora_text"
+        app:layout_constraintTop_toBottomOf="@+id/dia_text" />
+
+    <EditText
+        android:id="@+id/hora_text"
+        android:layout_width="332dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/Diagnostico"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/background_white"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:hint="00:00"
+        android:textColorHint="#5A5A5A"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/button_red"
+        android:text="Iniciar Sesion"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
