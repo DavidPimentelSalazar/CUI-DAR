@@ -1,4 +1,4 @@
-package com.example.cuidar;
+package com.example.cuidar.Login;
 
 
 
@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cuidar.Fragments_and_menus.Main;
+import com.example.cuidar.R;
+
 import java.util.ArrayList;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {

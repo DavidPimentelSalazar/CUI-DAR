@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_blue"
     android:padding="10dp"
-    tools:context=".Login" >
+    tools:context=".Login.Login" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:context=".Login">
+        tools:context=".Login.Login">
 
         <TextView
             android:layout_width="wrap_content"

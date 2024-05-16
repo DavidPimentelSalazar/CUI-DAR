@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments;
+package com.example.cuidar.Fragments_and_menus;
 
 import android.os.Bundle;
 

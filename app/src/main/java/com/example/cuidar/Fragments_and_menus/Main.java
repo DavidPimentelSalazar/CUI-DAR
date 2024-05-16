@@ -1,4 +1,4 @@
-package com.example.cuidar;
+package com.example.cuidar.Fragments_and_menus;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,11 +12,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.cuidar.Fragments.AboutFragment;
-import com.example.cuidar.Fragments.GestionDeDiagnosticos;
-import com.example.cuidar.Fragments.GestionDePacientesFragment;
-import com.example.cuidar.Fragments.ReassessmentsFragment;
-import com.example.cuidar.Fragments.SettingsFragment;
+import com.example.cuidar.Login.Login;
+import com.example.cuidar.R;
 import com.google.android.material.navigation.NavigationView;
 
 public class Main extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

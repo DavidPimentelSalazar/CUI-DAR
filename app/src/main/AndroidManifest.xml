@@ -13,7 +13,16 @@
         android:theme="@style/Theme.NavigationDrawer"
         tools:targetApi="31">
         <activity
-            android:name=".Login"
+            android:name=".Fragments_and_menus.In_patient.questionnaire.Questionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments_and_menus.In_patient.questionnaire.Questionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments_and_menus.In_patient.DiagnosticoPaciente"
+            android:exported="false" />
+        <activity
+            android:name=".Login.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +30,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".Main"
+            android:name=".Fragments_and_menus.Main"
             android:exported="false" />
     </application>
 
