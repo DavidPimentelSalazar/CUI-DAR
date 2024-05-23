@@ -52,11 +52,11 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
         } else if (itemId == R.id.diagnosis) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GestionDeDiagnosticos()).commit();
         } else if (itemId == R.id.reassessments) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReassessmentsFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReevaluacionesFragment()).commit();
         } else if (itemId == R.id.nav_settings) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AjustesFragment()).commit();
         } else if (itemId == R.id.nav_us) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AcercaDeFragment()).commit();
         } else if (itemId == R.id.nav_logout) {
             Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
             Intent it = new Intent(Main.this, Login.class);

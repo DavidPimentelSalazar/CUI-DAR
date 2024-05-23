@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.cuidar.Fragments_and_menus.In_patient.DiagnosticoPaciente;
+import com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama;
 import com.example.cuidar.R;
 
 import java.util.ArrayList;
@@ -25,17 +26,22 @@ public class GestionDePacientesFragment extends Fragment implements View.OnClick
 
         buttons = new ArrayList<>();
         buttons.add(view.findViewById(R.id.button_eduardo));
+        buttons.add(view.findViewById(R.id.button_eduardo2));
 
-        buttons.get(0).setOnClickListener(this);
+        for (Button tmp:buttons) {
+            tmp.setOnClickListener(this);
+        }
 
         return view;
     }
 
 @Override
     public void onClick(View v) {
-        Button iniciarDiagnostico = buttons.get(0);
-        if (v == iniciarDiagnostico) {
+        if (v == buttons.get(0)) {
             Intent intent = new Intent(getContext(), DiagnosticoPaciente.class);
+            startActivity(intent);
+        } else if (v == buttons.get(1)){
+            Intent intent = new Intent(getContext(), Flujodrama.class);
             startActivity(intent);
         }
     }

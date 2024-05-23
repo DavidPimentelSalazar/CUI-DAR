@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.questionnaire;
+package com.example.cuidar.Fragments_and_menus.In_patient.cuestionario;
 
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.example.cuidar.R;
 
 
-public class QuestionnaireFragment extends Fragment {
+public class CuestionarioFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_questionnaire, container, false);

@@ -1,13 +1,18 @@
 package com.example.cuidar.users_data;
 
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class PacienteDiagnostico {
+public class PacienteDiagnostico implements Serializable {
+
     private int id;
     private String nombre, fecha;
     private boolean diagnostico;
+
+    // flujodrama //
+    private boolean reversible, ultimasHoras, deviracionEspecialista;
 
     public PacienteDiagnostico() {
 
@@ -50,6 +55,37 @@ public class PacienteDiagnostico {
         return fecha;
     }
 
+
+    /////////////////////////
+    ////// Flujodrama ///////
+
+    /////// REVERSIBLE //////
+    public boolean isReversible() {
+        return reversible;
+    }
+
+    public void setReversible(boolean reversible) {
+        this.reversible = reversible;
+    }
+
+    //////// Ultima hora ///////
+    public boolean isUltimasHoras() {
+        return ultimasHoras;
+    }
+
+    public void setUltimasHoras(boolean ultimasHoras) {
+        this.ultimasHoras = ultimasHoras;
+    }
+
+    //////// Deviracion especialista /////////
+    public boolean isDeviracionEspecialista() {
+        return deviracionEspecialista;
+    }
+
+    public void setDeviracionEspecialista(boolean deviracionEspecialista) {
+        this.deviracionEspecialista = deviracionEspecialista;
+    }
+
     //______ MODULOS ______//
     /////// GET FECHA ///////
     public String createDate() {
@@ -58,4 +94,5 @@ public class PacienteDiagnostico {
         setFecha(fechaFormato.format(new Date()));
         return getFecha();
     }
+
 }

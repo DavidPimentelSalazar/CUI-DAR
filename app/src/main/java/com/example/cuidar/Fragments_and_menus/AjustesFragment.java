@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.cuidar.R;
 
-public class SettingsFragment extends Fragment {
+public class AjustesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
