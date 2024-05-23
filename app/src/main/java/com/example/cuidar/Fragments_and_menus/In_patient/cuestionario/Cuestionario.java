@@ -12,8 +12,8 @@ public class Cuestionario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questionnaire);
+        setContentView(R.layout.activity_questionario);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FlujogramaFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CuestionarioFragment()).commit();
     }
 }

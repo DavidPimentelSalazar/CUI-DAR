@@ -1,14 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments_and_menus.In_patient.flujodrama.FlujogramaFragment">
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:orientation="vertical"
+    tools:context=".Fragments_and_menus.In_patient.cuestionario.CuestionarioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/juicioclinico"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="JUICIO CLINICO"
+        android:textColor="#3F51B5"
+        android:textSize="40sp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/reversible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="¿Existe causa potencialmente reversible de la situación del paciente?"
+        android:textColor="#3F51B5"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/reversible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="No/Si" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ultimasHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="¿Puede ser que el paciente esté en las últimas horas o días de vida?"
+        android:textColor="#3F51B5"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/ultimasHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No/Si" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/especialista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="¿Se requiere derivación a una especialista por incertidumbre en el pronóstico?"
+        android:textColor="#3F51B5"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/especialista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="No/Si" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_weight="0"
+        android:text="siguiente" />
+
+</LinearLayout>
