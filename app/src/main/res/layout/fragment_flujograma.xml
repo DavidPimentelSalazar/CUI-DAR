@@ -40,7 +40,7 @@
         android:orientation="horizontal">
 
         <Switch
-            android:id="@+id/reversible"
+            android:id="@+id/reversible_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
@@ -68,7 +68,7 @@
         android:orientation="horizontal">
 
         <Switch
-            android:id="@+id/ultimasHoras"
+            android:id="@+id/ultimasHoras_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No/Si" />
@@ -94,7 +94,7 @@
         android:orientation="horizontal">
 
         <Switch
-            android:id="@+id/especialista"
+            android:id="@+id/especialista_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"

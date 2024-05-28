@@ -1,5 +1,6 @@
 package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -17,6 +18,10 @@ public class FujodramaInterior extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fujodrama_interior);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FlujogramaFragment()).commit();
+        Bundle bundle = getIntent().getExtras();
+        FlujogramaFragment nuevoFlujoFragment = new FlujogramaFragment();
+        nuevoFlujoFragment.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, nuevoFlujoFragment).commit();
         }
 }

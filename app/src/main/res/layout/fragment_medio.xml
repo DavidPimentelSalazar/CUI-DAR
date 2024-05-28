@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context=".Fragments_and_menus.In_patient.flujodrama.Sud.Si">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="¿?"
+        android:textColor="#0004E8"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="En caso de incertidumbre se puede valorar el mantener tratamiento activo, y a la vez iniciar el plan de cuidados hacia el confort, siempre con revisiones frecuentes."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Extremar la información de la situación y objetivos del plan al paciente y familiar o cuidador/a."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <Button
+            android:id="@+id/siguiente2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Si" />
+
+        <Button
+            android:id="@+id/siguiente3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="No" />
+    </LinearLayout>
+
+</LinearLayout>

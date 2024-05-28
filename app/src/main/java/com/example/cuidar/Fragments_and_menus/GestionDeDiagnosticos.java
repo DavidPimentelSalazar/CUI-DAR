@@ -18,11 +18,6 @@ import java.util.ArrayList;
 
 public class GestionDeDiagnosticos extends Fragment {
 
-    ArrayList<Button> buttons = new ArrayList<>();
-
-    TextView texto;
-    PacienteDiagnostico pacienteDiagnostico;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_gestion_de_diagnosticos, container, false);

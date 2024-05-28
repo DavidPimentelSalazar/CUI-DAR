@@ -8,4 +8,10 @@
     android:orientation="vertical"
     tools:context=".Fragments_and_menus.In_patient.cuestionario.CuestionarioFragment">
 
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuestionario Fragment"
+        android:textSize="34sp" />
 </LinearLayout>
