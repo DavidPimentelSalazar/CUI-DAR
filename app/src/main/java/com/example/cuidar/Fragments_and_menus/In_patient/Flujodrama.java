@@ -17,13 +17,14 @@ public class Flujodrama extends AppCompatActivity implements Serializable {
 
     ArrayList<Button> buttons;
 
-    PacienteDiagnostico paciente = new PacienteDiagnostico();
+    PacienteDiagnostico paciente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flujodrama);
-
+        Bundle bundle = getIntent().getExtras();
+        paciente = (PacienteDiagnostico) bundle.get("paciente");
         paciente.setDiagnostico(true);
 
         buttons = new ArrayList<>();
@@ -31,7 +32,6 @@ public class Flujodrama extends AppCompatActivity implements Serializable {
 
         buttons.get(0).setOnClickListener(v -> {
             Intent intent = new Intent(this, FujodramaInterior.class);
-            Bundle bundle = new Bundle();
             bundle.putSerializable("paciente", paciente);
             intent.putExtras(bundle);
             startActivity(intent);

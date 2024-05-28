@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.cuidar.Fragments_and_menus.In_patient.cuestionario.Cuestionario;
 import com.example.cuidar.R;
@@ -26,6 +27,10 @@ public class Si2 extends Fragment implements View.OnClickListener {
 
         paciente = (PacienteDiagnostico) getArguments().get("paciente");
 
+        TextView texto;
+        texto = view.findViewById(R.id.textView19);
+        texto.setText(paciente.getNombre());
+
         si = view.findViewById(R.id.button2);
         si.setOnClickListener(this);
 
@@ -35,6 +40,9 @@ public class Si2 extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(getActivity(), Cuestionario.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("paciente",paciente);
+        intent.putExtra("paciente",bundle);
         startActivity(intent);
     }
 }

@@ -53,15 +53,15 @@ public class SeDiagnostica extends Fragment implements View.OnClickListener{
         if (v == buttons.get(0)){
             Si si = new Si();
             si.setArguments(bundle);
-            ft.replace(R.id.fragment_container, new Si());
+            ft.replace(R.id.fragment_container, si);
         } else if (v == buttons.get(1)) {
             Medio medio = new Medio();
             medio.setArguments(bundle);
-            ft.replace(R.id.fragment_container, new Medio());
+            ft.replace(R.id.fragment_container, medio);
         } else if (v == buttons.get(2)) {
             No no = new No();
             no.setArguments(bundle);
-            ft.replace(R.id.fragment_container, new No());
+            ft.replace(R.id.fragment_container, no);
         }
 
         ft.addToBackStack(null);

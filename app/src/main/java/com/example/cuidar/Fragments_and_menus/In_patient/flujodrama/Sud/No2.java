@@ -35,6 +35,9 @@ public class No2 extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(getActivity(), Main.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("paciente",paciente);
+        intent.putExtra("paciente",bundle);
         startActivity(intent);
     }
 }
