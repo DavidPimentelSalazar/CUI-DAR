@@ -45,19 +45,18 @@ public class Si2 extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        json();
+        //json();
 
         Intent intent = new Intent(getActivity(), Cuestionario.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("paciente",paciente);
-        intent.putExtra("paciente",bundle);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 
     protected void json() {
         Gson gson = new Gson();
         String json = gson.toJson(paciente);
-        System.out.println(json);
 
         FileWriter fw;
         try {

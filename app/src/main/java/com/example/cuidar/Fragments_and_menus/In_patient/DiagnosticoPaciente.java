@@ -16,8 +16,6 @@ import java.util.ArrayList;
 public class DiagnosticoPaciente extends AppCompatActivity {
 
     ArrayList<Button> buttons = new ArrayList<>();
-
-    TextView texto;
     PacienteDiagnostico pacienteDiagnostico;
 
     @Override
@@ -25,15 +23,14 @@ public class DiagnosticoPaciente extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnostico_paciente);
 
-
-        texto = findViewById(R.id.Diagnostico); ///// esto es para coger el titulo para ponerlo ahi luego se quitaria
-        pacienteDiagnostico = new PacienteDiagnostico(); // el paciente.
+        Bundle bundle = getIntent().getExtras();
+        pacienteDiagnostico = (PacienteDiagnostico) bundle.get("paciente");
 
         buttons.add(findViewById(R.id.iniciarDiagnostico));
 
         buttons.get(0).setOnClickListener(v -> {
-            texto.setText(" "+pacienteDiagnostico.createDate());
             Intent intent = new Intent(this, Cuestionario.class);
+            intent.putExtras(bundle);
             startActivity(intent);
         });
     }

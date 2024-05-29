@@ -40,6 +40,7 @@ public class FlujogramaFragment extends Fragment implements View.OnClickListener
     public void onClick(View v) {
 
         PacienteDiagnostico paciente = (PacienteDiagnostico) getArguments().get("paciente");
+        paciente.createDate();
         paciente.setReversible(switches.get(0).isChecked());
         paciente.setUltimasHoras(switches.get(1).isChecked());
         paciente.setDeviracionEspecialista(switches.get(2).isChecked());

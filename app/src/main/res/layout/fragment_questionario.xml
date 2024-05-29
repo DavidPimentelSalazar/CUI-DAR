@@ -14,4 +14,11 @@
         android:layout_height="wrap_content"
         android:text="Cuestionario Fragment"
         android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp" />
 </LinearLayout>
