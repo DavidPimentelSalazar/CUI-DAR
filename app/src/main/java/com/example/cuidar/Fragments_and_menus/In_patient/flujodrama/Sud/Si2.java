@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,10 @@ import android.widget.TextView;
 import com.example.cuidar.Fragments_and_menus.In_patient.cuestionario.Cuestionario;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
+import com.google.gson.Gson;
+
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Si2 extends Fragment implements View.OnClickListener {
 
@@ -39,10 +44,39 @@ public class Si2 extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
+        json();
+
         Intent intent = new Intent(getActivity(), Cuestionario.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("paciente",paciente);
         intent.putExtra("paciente",bundle);
         startActivity(intent);
+    }
+
+    protected void json() {
+        Gson gson = new Gson();
+        String json = gson.toJson(paciente);
+        System.out.println(json);
+
+        FileWriter fw;
+        try {
+            fw = new FileWriter("paciente.json");
+        } catch (Exception e) {
+            Log.i("json", "json: Error paciente al crear el archivo");
+            return;
+        }
+
+        try {
+            fw.write(json);
+        } catch (Exception e) {
+            Log.e("json", "json: Error al escribir el achivo", e );
+        }
+
+        try {
+            fw.close();
+        } catch (Exception e) {
+            Log.i("json", "json: Error al cerrar el archivo");
+        }
     }
 }
