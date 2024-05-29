@@ -1,11 +1,9 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud;
+package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,13 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.cuidar.Fragments_and_menus.In_patient.cuestionario.Cuestionario;
+import com.example.cuidar.Fragments_and_menus.In_patient.Cuestionario.Cuestionario;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 import com.google.gson.Gson;
 
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class Si2 extends Fragment implements View.OnClickListener {
 

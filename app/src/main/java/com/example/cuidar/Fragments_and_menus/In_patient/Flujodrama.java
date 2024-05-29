@@ -6,7 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.FujodramaInterior;
+import com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.FujodramaInterior;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 

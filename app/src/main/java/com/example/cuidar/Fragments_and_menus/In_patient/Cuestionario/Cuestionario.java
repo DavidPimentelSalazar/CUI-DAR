@@ -1,9 +1,10 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.cuestionario;
+package com.example.cuidar.Fragments_and_menus.In_patient.Cuestionario;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.cuidar.Fragments_and_menus.In_patient.Cuestionario.PersonalImplicado.CuestionarioFragment;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 

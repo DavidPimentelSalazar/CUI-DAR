@@ -1,7 +1,6 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama;
+package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
