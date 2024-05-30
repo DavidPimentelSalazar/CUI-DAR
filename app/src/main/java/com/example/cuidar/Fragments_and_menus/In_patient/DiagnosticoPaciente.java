@@ -6,7 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuidar.Fragments_and_menus.In_patient.Cuestionario.Cuestionario;
+import com.example.cuidar.Fragments_and_menus.In_patient.cuestionario.Cuestionario;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 
@@ -26,8 +26,8 @@ public class DiagnosticoPaciente extends AppCompatActivity {
         pacienteDiagnostico = (PacienteDiagnostico) bundle.get("paciente");
 
         buttons.add(findViewById(R.id.iniciarDiagnostico));
-
         buttons.get(0).setOnClickListener(v -> {
+            pacienteDiagnostico.createDate();
             Intent intent = new Intent(this, Cuestionario.class);
             intent.putExtras(bundle);
             startActivity(intent);

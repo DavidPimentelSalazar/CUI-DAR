@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud;
+package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud;
 
 import android.os.Bundle;
 
@@ -14,18 +14,25 @@ import android.widget.Button;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 
+import java.util.ArrayList;
 
-public class Si extends Fragment implements View.OnClickListener{
+
+public class Medio extends Fragment implements View.OnClickListener {
     PacienteDiagnostico paciente;
-    Button siguiente;
+    ArrayList<Button> buttons;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_si, container, false);
+        View view = inflater.inflate(R.layout.fragment_medio, container, false);
 
         paciente = (PacienteDiagnostico) getArguments().get("paciente");
 
-        siguiente = view.findViewById(R.id.siguiente2);
-        siguiente.setOnClickListener(this);
+        buttons = new ArrayList<>();
+        buttons.add(view.findViewById(R.id.siguiente2));
+        buttons.add(view.findViewById(R.id.siguiente3));
+
+        for (Button tmp: buttons) {
+            tmp.setOnClickListener(this);
+        }
 
         return view;
     }
@@ -34,15 +41,21 @@ public class Si extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         FragmentManager fm = getActivity().getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
+
         // bundle
         Bundle bundle = new Bundle();
         bundle.putSerializable("paciente",paciente);
 
-        // meter el bundle en el fragmento
-        Si2 si2 = new Si2();
-        si2.setArguments(bundle);
+        if (v == buttons.get(0)){
+            Si si = new Si();
+            si.setArguments(bundle);
+            ft.replace(R.id.fragment_container, si);
+        } else if (v == buttons.get(1)) {
+            No no = new No();
+            no.setArguments(bundle);
+            ft.replace(R.id.fragment_container, no);
+        }
 
-        ft.replace(R.id.fragment_container, si2);
         ft.addToBackStack(null);
         ft.commit();
     }

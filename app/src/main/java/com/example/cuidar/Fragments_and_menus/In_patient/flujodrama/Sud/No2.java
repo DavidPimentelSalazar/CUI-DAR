@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud;
+package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud;
 
 import android.content.Intent;
 import android.os.Bundle;

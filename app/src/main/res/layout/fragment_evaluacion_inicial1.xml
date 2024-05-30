@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:orientation="vertical"
+    tools:context=".Fragments_and_menus.In_patient.cuestionario.PersonalImplicado.CuestionarioFragment">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="EVALUACIÓN INICIAL"
+        android:textColor="#3F51B5"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text=" A1 – COMUNICACIÓN E INFORMACIÓN.   PROCESO DE TOMA DE DECISIONES "
+        android:textColorLink="#3F51B5"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/A1.1_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text=" A1.1¿Adopta el paciente un papel pleno y activo en la comunicación?"
+            android:textColorLink="#3F51B5"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/A1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Si_radioButton_A1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/No_radioButton_A1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/Np_radioButton_A1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Np" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/A1.2_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="A1.2 ¿Adopta el familiar un papel pleno y activo en la comunicación?"
+            android:textColorLink="#3F51B5"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/A1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Si_radioButton_A2.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/No_radioButton_A2.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/Np_radioButton_A2.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Np" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/A1.1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="A1.1.1 Evaluar barreras potenciales que diﬁcultan o impiden la comunicación: Audición, visión, habla, trastorno neurológico, trastorno mental, confusión,somnolencia, otros (especiﬁcar)"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Paciente_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Paciente"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/A1.1.1_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Idioma_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Idioma"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/A1.1.1_idioma_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Familia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Familia"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/A1.1.1_Familia_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Idioma_familia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Idioma"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/A1.1.1_idioma_familia_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>

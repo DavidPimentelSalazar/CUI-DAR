@@ -6,7 +6,7 @@
     android:layout_marginLeft="35dp"
     android:layout_marginRight="35dp"
     android:orientation="vertical"
-    tools:context=".Fragments_and_menus.In_patient.Cuestionario.PersonalImplicado.CuestionarioFragment">
+    tools:context=".Fragments_and_menus.In_patient.cuestionario.PersonalImplicado.CuestionarioFragment">
 
 
     <TextView

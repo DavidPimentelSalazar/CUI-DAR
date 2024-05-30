@@ -1,14 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments_and_menus.In_patient.Cuestionario.PersonalImplicado.CuestionarioPersonalImplicado2">
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:orientation="vertical"
+    tools:context=".Fragments_and_menus.In_patient.cuestionario.PersonalImplicado.CuestionarioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView30"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="PERSONAL IMPLICADO"
+        android:textColor="#3F51B5"
+        android:textSize="34sp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/Datos_personales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Datos personales"
+        android:textColorLink="#3F51B5"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/A1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cuidador principal:"
+        android:textColorLink="#3F51B5"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cuidadorPrincipal_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Relación_con_paciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relación con paciente:"
+        android:textColorLink="#3F51B5"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Relación_con_paciente_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/N_teléfono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nº teléfono:"
+        android:textColorLink="#3F51B5"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/N_teléfono_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Button" />
+
+</LinearLayout>

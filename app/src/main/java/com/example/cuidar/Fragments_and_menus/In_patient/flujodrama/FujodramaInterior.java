@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama;
+package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama;
 
 import android.os.Bundle;
 

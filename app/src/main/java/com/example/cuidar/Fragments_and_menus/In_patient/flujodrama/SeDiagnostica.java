@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama;
+package com.example.cuidar.Fragments_and_menus.In_patient.flujodrama;
 
 import android.os.Bundle;
 
@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud.Medio;
-import com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud.No;
-import com.example.cuidar.Fragments_and_menus.In_patient.Flujodrama.Sud.Si;
+import com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud.Medio;
+import com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud.No;
+import com.example.cuidar.Fragments_and_menus.In_patient.flujodrama.Sud.Si;
 import com.example.cuidar.R;
 import com.example.cuidar.users_data.PacienteDiagnostico;
 

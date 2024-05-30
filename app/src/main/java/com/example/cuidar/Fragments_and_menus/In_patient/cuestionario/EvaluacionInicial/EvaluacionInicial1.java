@@ -1,4 +1,4 @@
-package com.example.cuidar.Fragments_and_menus.In_patient.Cuestionario.PersonalImplicado;
+package com.example.cuidar.Fragments_and_menus.In_patient.cuestionario.EvaluacionInicial;
 
 import android.os.Bundle;
 
@@ -10,10 +10,11 @@ import android.view.ViewGroup;
 
 import com.example.cuidar.R;
 
-public class CuestionarioPersonalImplicado2 extends Fragment {
+public class EvaluacionInicial1 extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_cuestionario_personal_implicado2, container, false);
+        View view = inflater.inflate(R.layout.fragment_evaluacion_inicial1, container, false);
 
         return view;
     }

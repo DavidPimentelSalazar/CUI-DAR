@@ -1,6 +1,8 @@
 package com.example.cuidar.users_data;
 
 
+import android.text.Editable;
+
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,6 +11,7 @@ public class PacienteDiagnostico implements Serializable {
 
     private int id;
     private String nombre, fecha;
+    private Editable diagnostico_texto, comorbilidad;
     private boolean diagnostico;
 
     // flujodrama //
@@ -85,6 +88,19 @@ public class PacienteDiagnostico implements Serializable {
     public void setDeviracionEspecialista(boolean deviracionEspecialista) {
         this.deviracionEspecialista = deviracionEspecialista;
     }
+
+    ///////////////////////////////
+    /////   CUESTIONARIO  /////////
+
+    ///// diagnostico_texto   /////
+    public void setDiagnostico_texto(Editable diagnostico_texto) {this.diagnostico_texto = diagnostico_texto;}
+
+    public Editable getDiagnostico_texto() {return diagnostico_texto;}
+
+    /////// comorbilidad    ///////
+    public void setComorbilidad(Editable comorbilidad) {this.comorbilidad = comorbilidad;}
+
+    public Editable getComorbilidad() {return comorbilidad;}
 
     //______ MODULOS ______//
     /////// GET FECHA ///////

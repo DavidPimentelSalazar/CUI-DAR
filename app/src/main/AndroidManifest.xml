@@ -13,13 +13,13 @@
         android:theme="@style/Theme.NavigationDrawer"
         tools:targetApi="31">
         <activity
-            android:name=".Fragments_and_menus.In_patient.Flujodrama.FujodramaInterior"
+            android:name=".Fragments_and_menus.In_patient.flujodrama.FujodramaInterior"
             android:exported="false" />
         <activity
             android:name=".Fragments_and_menus.In_patient.Flujodrama"
             android:exported="false" />
         <activity
-            android:name=".Fragments_and_menus.In_patient.Cuestionario.Cuestionario"
+            android:name=".Fragments_and_menus.In_patient.cuestionario.Cuestionario"
             android:exported="false" />
         <activity
             android:name=".Fragments_and_menus.In_patient.DiagnosticoPaciente"
